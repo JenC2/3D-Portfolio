@@ -1,4 +1,5 @@
-import React from "react";
+import Button from "../components/Button";
+import HeroExperience from "../components/HeroModels/HeroExperience";
 import { words } from "../constants";
 
 const Hero = () => {
@@ -34,15 +35,26 @@ const Hero = () => {
                 </span>
               </h1>
               <h1>to shipped software</h1>
-              <p>
-                Hi, I’m Jenny, a full-stack developer focused on building web
-                and mobile applications, from backend systems to clean user
-                experiences.
-              </p>
             </div>
+            <p className="text-white-50 md:text-xl relation z-10 pointer-events-none">
+              Hi, I’m Jenny, a full-stack developer focused on building web and
+              mobile applications, <br className="hidden xl:block" />
+              from backend systems to clean user experiences.
+            </p>
+            <Button
+              className="md:w-80 md:h-16 w-60 h-12"
+              id="button"
+              text="check my profile"
+            />
           </div>
         </header>
+
         {/* RIGHT: 3D MODEL */}
+        <figure>
+          <div className="hero-3d-layout border-red-200 border-2">
+            <HeroExperience />
+          </div>
+        </figure>
       </div>
     </section>
   );
