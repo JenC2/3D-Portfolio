@@ -70,9 +70,9 @@ const ProjectsSection = () => {
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={project2Ref}>
               <div className="image-wrapper bg-[#ffefdb]">
-                <img src="/images/project2.png" alt="Advanture Guides" />
+                <img src="/images/project2.png" alt="Adventure Guides" />
               </div>
-              <h2 Guides>Advanture Guides - Travel Information Platform</h2>
+              <h2 Guides>Adventure Guides - Travel Information Platform</h2>
             </div>
 
             <div className="project" ref={project3Ref}>
