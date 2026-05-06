@@ -4,6 +4,7 @@ import TitleHeader from "../components/TitleHeader";
 const AbilitiyCards = () => {
   return (
     <div className="w-full section-padding">
+      <div className="w-full h-full md:px-20 px-5">
       <TitleHeader title="My Qualities" />
       <div className="mx-auto grid-4-cols mt-32">
         {abilities.map(({ imgPath, title, desc }) => (
@@ -18,6 +19,7 @@ const AbilitiyCards = () => {
             <p className="text-white-50 text-lg ">{desc}</p>
           </div>
         ))}
+      </div>
       </div>
     </div>
   );

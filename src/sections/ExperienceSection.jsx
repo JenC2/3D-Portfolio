@@ -56,11 +56,8 @@ const ExperienceSection = () => {
   }, []);
 
   return (
-    <section
-      id="experience"
-      className="w-full md:mt-40 mt-20 section-padding xl:px-0"
-    >
-      <div className="w-full h-full md-px-20 px-5">
+    <section id="experience" className="w-full md:mt-40 mt-20 section-padding">
+      <div className="w-full h-full md:px-20 px-5">
         <TitleHeader title="Professional Work Experience" />
 
         <div className="mt-32 relative">
@@ -81,8 +78,8 @@ const ExperienceSection = () => {
                       <div className="timeline" />
                       <div className="gradient-line w-1 h-full" />
                     </div>
-
-                    <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20 md:ml-24 ml-18">
+                    <div className="w-1/6 p-8"></div>
+                    <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
                       <div>
                         <h1 className="font-semibold text-3xl">{card.title}</h1>
                         <p className="my-5 text-white-50">{card.date}</p>
