@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import TitleHeader from "../components/TitleHeader";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -48,6 +49,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects" ref={sectionRef} className="app-projects">
       <div className="w-full">
+        <TitleHeader title="My Projects" />
         <div className="projectslayout">
           {/* LEFT */}
           <div className="first-project-wrapper" ref={project1Ref}>

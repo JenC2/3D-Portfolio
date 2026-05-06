@@ -151,10 +151,10 @@ section {
   }
 
   .app-projects {
-    @apply w-full mt-20 px-5 md:px-20 py-10 md:py-20 flex items-center justify-center;
+    @apply w-full mt-20 px-5 md:px-2 py-10 md:py-20 flex items-center justify-center;
 
     .projectslayout {
-      @apply flex xl:flex-row flex-col gap-10 justify-between;
+      @apply flex xl:flex-row flex-col gap-10 md:mt-30 mt-20 justify-between ;
     }
 
     .first-project-wrapper {
