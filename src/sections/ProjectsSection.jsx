@@ -71,7 +71,7 @@ const ProjectsSection = () => {
           {/* RIGHT */}
           <div className="project-list-wrapper">
             <div className="project" ref={project2Ref}>
-              <div className="image-wrapper bg-[#ffefdb]">
+              <div className="image-wrapper bg-[#ffefdb]/50">
                 <img src="/images/project2.png" alt="Adventure Guides" />
               </div>
               <h2 className="text-xl md:text-2xl lg:text-3xl">
@@ -80,10 +80,12 @@ const ProjectsSection = () => {
             </div>
 
             <div className="project" ref={project3Ref}>
-              <div className="image-wrapper bg-[#ffe7eb]">
+              <div className="image-wrapper bg-[#ffe7eb]/50">
                 <img src="/images/project3.png" alt="Coming soon" />
               </div>
-              <h2 className="text-xl md:text-2xl lg:text-3xl">Coming Soon</h2>
+              <h2 className="text-xl md:text-2xl lg:text-3xl">
+                AI Career Assistant — In Progress
+              </h2>
             </div>
           </div>
         </div>
