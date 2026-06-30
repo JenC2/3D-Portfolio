@@ -1,7 +1,7 @@
 import { abilities } from "../constants";
 import TitleHeader from "../components/TitleHeader";
 
-const AbilitiyCards = () => {
+const AbilityCards = () => {
   return (
     <div className="w-full section-padding">
       <div className="w-full h-full md:px-20 px-5">
@@ -27,4 +27,4 @@ const AbilitiyCards = () => {
   );
 };
 
-export default AbilitiyCards;
+export default AbilityCards;

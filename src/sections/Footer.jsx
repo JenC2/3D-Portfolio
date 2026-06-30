@@ -6,8 +6,14 @@ const Footer = () => {
       <div className="footer-container relative flex items-center">
         <div className="socials mx-auto flex">
           {socialImgs.map((img) => (
-            <a className="icon" target="_blank" href={img.url} key={img.url}>
-              <img src={img.imgPath} alt="social icon" />
+            <a
+              className="icon"
+              target="_blank"
+              rel="noopener noreferrer"
+              href={img.url}
+              key={img.url}
+            >
+              <img src={img.imgPath} alt={img.name} />
             </a>
           ))}
         </div>

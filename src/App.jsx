@@ -1,5 +1,5 @@
 import NavBar from "./components/NavBar";
-import AbilitiyCards from "./sections/AbilitiyCards";
+import AbilityCards from "./sections/AbilityCards";
 import Contact from "./sections/Contact";
 import ExperienceSection from "./sections/ExperienceSection";
 import Footer from "./sections/Footer";
@@ -13,7 +13,7 @@ const App = () => {
       <NavBar />
       <Hero />
       <ProjectsSection />
-      <AbilitiyCards />
+      <AbilityCards />
       <ExperienceSection />
       <TechStack />
       <Contact />

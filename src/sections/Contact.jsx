@@ -11,10 +11,14 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [statusMessage, setStatusMessage] = useState("");
+  const [statusType, setStatusType] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
+    setStatusMessage("");
+    setStatusType("");
   };
 
   const handleSubmit = async (e) => {
@@ -31,8 +35,14 @@ const Contact = () => {
 
       // Reset form and stop loading
       setForm({ name: "", email: "", message: "" });
+      setStatusMessage("Thanks for reaching out. I’ll get back to you soon.");
+      setStatusType("success");
     } catch (error) {
       console.error("EmailJS Error:", error);
+      setStatusMessage(
+        "Something went wrong. Please email me directly instead.",
+      );
+      setStatusType("error");
     } finally {
       setLoading(false);
     }
@@ -92,7 +102,12 @@ const Contact = () => {
                   />
                 </div>
 
-                <button type="submit">
+                <button
+                  type="submit"
+                  disabled={loading}
+                  aria-disabled={loading}
+                  className={loading ? "cursor-not-allowed opacity-70" : ""}
+                >
                   <div className="cta-button group">
                     <div className="bg-circle" />
                     <p className="text">
@@ -103,6 +118,20 @@ const Contact = () => {
                     </div>
                   </div>
                 </button>
+
+                {statusMessage && (
+                  <p
+                    role={statusType === "error" ? "alert" : "status"}
+                    aria-live="polite"
+                    className={`text-sm ${
+                      statusType === "success"
+                        ? "text-green-300"
+                        : "text-red-300"
+                    }`}
+                  >
+                    {statusMessage}
+                  </p>
+                )}
               </form>
             </div>
           </div>

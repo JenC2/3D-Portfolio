@@ -1,7 +1,10 @@
 import TitleHeader from "../components/TitleHeader";
 import { techStackImgs } from "../constants";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const TechStack = () => {
   useGSAP(() => {

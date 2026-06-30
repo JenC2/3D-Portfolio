@@ -20,6 +20,38 @@ const words = [
   { text: "Collaboration" },
 ];
 
+const projects = [
+  {
+    title: "TripTribe",
+    description:
+      "A travel community platform where users can share destinations, trip ideas, and explore travel content.",
+    details:
+      "Built with Vue.js and Django. I implemented authentication, REST APIs, database models, content posting flows, and responsive UI screens.",
+    imgPath: "/images/project1.png",
+    alt: "TripTribe travel community platform",
+    githubUrl: "https://github.com/JenC2/trip-tribe",
+  },
+  {
+    title: "Adventure Guides",
+    description: "Travel Information Platform",
+    details: "A travel guide application focused on destination information.",
+    imgPath: "/images/project2.png",
+    alt: "Adventure Guides travel information platform",
+    bgColor: "bg-[#ffefdb]/50",
+    githubUrl: "https://github.com/JenC2/projet_collectif_dataviz-dataviz",
+  },
+  {
+    title: "AI Career Assistant",
+    description: "In-progress LLM-powered assistant for career support.",
+    details:
+      "Exploring prompt design, LLM API integration, and conversation flows for interview coaching, resume review.",
+    imgPath: "/images/project3.png",
+    alt: "AI Career Assistant",
+    bgColor: "bg-[#ffe7eb]/50",
+    githubUrl: "https://github.com/JenC2/AI-Career-Assistant-In-Progress",
+  },
+];
+
 const abilities = [
   {
     imgPath: "/images/adaptability.jpg",
@@ -175,4 +207,12 @@ const socialImgs = [
   },
 ];
 
-export { words, abilities, socialImgs, techStackImgs, expCards, navLinks };
+export {
+  words,
+  abilities,
+  socialImgs,
+  techStackImgs,
+  expCards,
+  navLinks,
+  projects,
+};

@@ -2,6 +2,7 @@ import { useRef } from "react";
 import TitleHeader from "../components/TitleHeader";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { projects } from "../constants";
 import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -12,14 +13,16 @@ const ProjectsSection = () => {
   const project2Ref = useRef(null);
   const project3Ref = useRef(null);
 
+  const [featuredProject, ...otherProjects] = projects;
+
   useGSAP(() => {
-    const projects = [
+    const projectCards = [
       project1Ref.current,
       project2Ref.current,
       project3Ref.current,
     ];
 
-    projects.forEach((card, index) => {
+    projectCards.forEach((card, index) => {
       gsap.fromTo(
         card,
         {
@@ -27,7 +30,7 @@ const ProjectsSection = () => {
           opacity: 0,
         },
         {
-          y: 50,
+          y: 0,
           opacity: 1,
           duration: 1,
           delay: 0.3 * (index + 1),
@@ -46,48 +49,66 @@ const ProjectsSection = () => {
     );
   }, []);
 
+  const projectRefs = [project2Ref, project3Ref];
+
   return (
     <section id="projects" ref={sectionRef} className="app-projects">
       <div className="w-full h-full md:px-15 md:mt-40 px-10">
         <TitleHeader title="My Projects" />
+
         <div className="projectslayout">
-          {/* LEFT */}
           <div className="first-project-wrapper" ref={project1Ref}>
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="TripTribe" />
+              <img src={featuredProject.imgPath} alt={featuredProject.alt} />
             </div>
+
             <div className="text-content">
               <h2>
-                TripTribe - A travel community platform where users can share
-                destinations, trip ideas, and explore travel content.
+                {featuredProject.title} - {featuredProject.description}
               </h2>
-              <p>
-                Built with Vue.js and Django. I implemented authentication, REST
-                APIs, database models, content posting flows, and responsive UI
-                screens.
-              </p>
+
+              <p>{featuredProject.details}</p>
+
+              <a
+                href={featuredProject.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex w-fit items-center rounded-md border border-white/20 px-4 py-2 text-base font-semibold text-white-50 transition-colors hover:bg-white hover:text-black"
+              >
+                View GitHub
+              </a>
             </div>
           </div>
 
-          {/* RIGHT */}
           <div className="project-list-wrapper">
-            <div className="project" ref={project2Ref}>
-              <div className="image-wrapper bg-[#ffefdb]/50">
-                <img src="/images/project2.png" alt="Adventure Guides" />
-              </div>
-              <h2 className="text-xl md:text-2xl lg:text-3xl">
-                Adventure Guides - Travel Information Platform
-              </h2>
-            </div>
+            {otherProjects.map((project, index) => (
+              <div
+                className="project"
+                ref={projectRefs[index]}
+                key={project.title}
+              >
+                <div className={`image-wrapper ${project.bgColor}`}>
+                  <img src={project.imgPath} alt={project.alt} />
+                </div>
 
-            <div className="project" ref={project3Ref}>
-              <div className="image-wrapper bg-[#ffe7eb]/50">
-                <img src="/images/project3.png" alt="Coming soon" />
+                <h2 className="text-xl md:text-2xl lg:text-3xl">
+                  {project.title} - {project.description}
+                </h2>
+
+                <p className="mt-3 text-white-50 text-body">
+                  {project.details}
+                </p>
+
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-flex w-fit items-center rounded-md border border-white/20 px-4 py-2 text-base font-semibold text-white-50 transition-colors hover:bg-white hover:text-black"
+                >
+                  View GitHub
+                </a>
               </div>
-              <h2 className="text-xl md:text-2xl lg:text-3xl">
-                AI Career Assistant — In Progress
-              </h2>
-            </div>
+            ))}
           </div>
         </div>
       </div>
