@@ -30,15 +30,18 @@ const TechStack = () => {
         <TitleHeader title="My Tech Stack" />
 
         <div className="tech-grid">
-          {techStackImgs.map((techStackIcon, index) => (
+          {techStackImgs.map((techStackIcon) => (
             <div
-              key={index}
+              key={techStackIcon.name}
               className="card-border tech-card overflow-hidden group rounded-4xl"
             >
               <div className="tech-card-animated-bg" />
               <div className="tech-card-content">
                 <div className="tech-icon-wrapper">
-                  <img src={techStackIcon.imgPath} alt="" />
+                  <img
+                    src={techStackIcon.imgPath}
+                    alt={`${techStackIcon.name} logo`}
+                  />
                 </div>
                 <div className="padding-x-lg w-full mb-5">
                   <p>{techStackIcon.name}</p>

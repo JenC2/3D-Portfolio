@@ -57,20 +57,20 @@ const techStackImgs = [
     imgPath: "/images/logos/css.png",
   },
   {
-    name: "React",
-    imgPath: "/images/logos/react.png",
-  },
-  {
     name: "Python",
     imgPath: "/images/logos/python.svg",
   },
   {
-    name: "Django",
-    imgPath: "/images/logos/django.png",
-  },
-  {
     name: "Elixir",
     imgPath: "/images/logos/elixir.svg",
+  },
+  {
+    name: "React",
+    imgPath: "/images/logos/react.png",
+  },
+  {
+    name: "Django",
+    imgPath: "/images/logos/django.png",
   },
   {
     name: "Phoenix",
@@ -81,16 +81,20 @@ const techStackImgs = [
     imgPath: "/images/logos/flutter.svg",
   },
   {
-    name: "AWS",
-    imgPath: "/images/logos/aws.svg",
-  },
-  {
     name: "SQL",
     imgPath: "/images/logos/sql.png",
   },
   {
     name: "MongoDB",
     imgPath: "/images/logos/mongodb.svg",
+  },
+  {
+    name: "AWS",
+    imgPath: "/images/logos/aws.svg",
+  },
+  {
+    name: "Docker",
+    imgPath: "/images/logos/docker.png",
   },
   {
     name: "Figma",
