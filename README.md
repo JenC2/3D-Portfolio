@@ -1,38 +1,14 @@
 # 3D Portfolio
 
+![Portfolio Preview](./public/preview.png)
+
 A 3D interactive portfolio.
 
 The site highlights my production fintech experience, selected projects, technical stack, and contact details in a polished single-page React experience.
 
 ## Overview
 
-I am a full stack developer focused on fintech, web, and mobile applications. My current stack includes React, Django, Elixir/Phoenix, Flutter, AWS, SQL, MongoDB, Docker, and Git.
-
-## Featured Projects
-
-### TripTribe
-
-A travel community platform where users can share destinations, trip ideas, and explore travel content.
-
-- Built with Vue.js and Django
-- Implemented authentication, REST APIs, database models, content posting flows, and responsive UI screens
-- GitHub: [trip-tribe](https://github.com/JenC2/trip-tribe)
-
-### Adventure Guides
-
-A travel information platform focused on destination discovery and visual data presentation.
-
-- Built as a collaborative data visualization project
-- Focused on destination information and travel guide content
-- GitHub: [projet_collectif_dataviz-dataviz](https://github.com/JenC2/projet_collectif_dataviz-dataviz)
-
-### AI Career Assistant
-
-An in-progress LLM-powered assistant for career support.
-
-- Exploring prompt design, LLM API integration, and conversation flows
-- Current direction includes interview coaching and resume review support
-- GitHub: [AI-Career-Assistant-In-Progress](https://github.com/JenC2/AI-Career-Assistant-In-Progress)
+This portfolio showcases my experience as a full stack developer, highlighting selected projects, technical skills, and professional background through an interactive 3D web experience.
 
 ## Tech Stack
 
@@ -103,4 +79,13 @@ public/
 - LinkedIn: [jenny-chen-chou](https://www.linkedin.com/in/jenny-chen-chou)
 - GitHub: [JenC2](https://github.com/JenC2)
 - Email: [jenny.chenchou@gmail.com](mailto:jenny.chenchou@gmail.com)
+
+
+## Credits
+
+This project includes the following third-party asset:
+
+- **"Stylized planet"** by **cmzw**
+- Source: https://skfb.ly/oyDUw
+- License: CC BY 4.0
 

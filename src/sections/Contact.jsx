@@ -144,11 +144,11 @@ const Contact = () => {
                   </h2>
 
                   <p className="text-white-50 text-body leading-relaxed">
-                    Whether you're looking for a developer, have a project in
-                    mind, or simply want to connect and discuss technology, I'd
-                    love to hear from you. I'm always open to exciting
-                    opportunities, meaningful collaborations, and engaging
-                    conversations.
+                    Whether you're hiring for a software engineering role, have
+                    a project in mind, or simply want to connect and discuss
+                    technology, I'd love to hear from you. I'm always open to
+                    exciting opportunities, meaningful collaborations, and
+                    engaging conversations.
                   </p>
 
                   <div className="mt-4 flex flex-col gap-3 text-white-50 text-body">
@@ -184,6 +184,31 @@ const Contact = () => {
                         GitHub
                       </a>
                     </p>
+                    <div className="mt-8 border-t border-white/10 pt-4">
+                      <p className="text-xs text-white-50">
+                        <span className="font-medium">Credits:</span> 3D planet
+                        model{" "}
+                        <a
+                          href="https://skfb.ly/oyDUw"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline hover:text-white transition-colors"
+                        >
+                          "Stylized planet"
+                        </a>{" "}
+                        by <span className="font-medium">cmzw</span>, licensed
+                        under{" "}
+                        <a
+                          href="https://creativecommons.org/licenses/by/4.0/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline hover:text-white transition-colors"
+                        >
+                          CC BY 4.0
+                        </a>
+                        .
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
